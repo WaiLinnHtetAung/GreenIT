@@ -1,0 +1,16 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --main-color: #287e3d;
+}
+
+.pointer {
+    cursor: pointer;
+}
