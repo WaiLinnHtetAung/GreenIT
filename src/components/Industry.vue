@@ -67,6 +67,7 @@ export default {};
   font-size: 44px;
   font-weight: bold;
   color: #0a0d31;
+  letter-spacing: 1px;
 }
 
 .industry .content {

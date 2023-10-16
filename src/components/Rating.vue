@@ -238,7 +238,7 @@ export default {
   }
   .star-rate h3,
   .rating-content h3 {
-    font-size: 14px;
+    font-size: 16px;
     color: #adadaa;
     margin-top: -10px;
   }

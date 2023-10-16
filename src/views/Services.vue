@@ -61,7 +61,7 @@ export default {
 
     onMounted(() => {
       services.value = store.getters.getServices;
-      //   window.scrollTo(0, 0);
+      window.scrollTo(0, 0);
     });
 
     return { services };
@@ -135,11 +135,12 @@ export default {
 .services-section h3 {
   margin: 20px 0;
   font-size: 25px;
-  height: 60px;
+  height: 45px;
 }
 
 .services-section p {
   height: 100px;
+  font-size: 20px;
 }
 
 .services-section .view-more {
@@ -148,7 +149,7 @@ export default {
 }
 
 .services-section .view-more a {
-  font-size: 14px;
+  font-size: 19px;
   color: #287e3d;
   font-weight: bold;
   border-bottom: 3px solid #ecebeb;
@@ -187,7 +188,7 @@ export default {
 
   .section-header p {
     color: #8a8787;
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .services .img {
@@ -229,16 +230,16 @@ export default {
   }
 
   .services-section img {
-    width: 50px;
+    width: 60px;
   }
 
   .services-section h3 {
     margin: 20px 0;
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .services-section p {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .services-section .view-more {
@@ -259,6 +260,10 @@ export default {
     color: #8a8787;
     font-size: 17px;
     padding: 20px 25%;
+  }
+
+  .services-section .view-more a {
+    font-size: 17px;
   }
 }
 

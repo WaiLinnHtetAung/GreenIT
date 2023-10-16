@@ -144,10 +144,13 @@
         <div>
           <router-link
             class="main-menu"
-            :class="{ active: currentRoute == '/company' }"
+            :class="{
+              active: currentRoute.slice(0, 7) == '/career',
+              active: currentRoute.slice(0, 9) == '/about-us',
+            }"
             to="/#"
             style="display: flex; gap: 7px; padding: 3.5px 10px"
-            ><span>Company</span> <i class="fa-solid fa-sort-down"></i
+            ><span>Company </span> <i class="fa-solid fa-sort-down"></i
           ></router-link>
         </div>
         <div class="mega-menu company-mega-menu">
@@ -254,7 +257,10 @@
       </div>
       <div class="menu">
         <div>
-          <router-link class="main-menu" to="/case-studies"
+          <router-link
+            :class="{ active: currentRoute === '/case-studies' }"
+            class="main-menu"
+            to="/case-studies"
             >Case Studies</router-link
           >
         </div>
@@ -611,7 +617,7 @@ export default {
   border-radius: 7px;
   font-size: 20px;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 1.8px;
 }
 
 .menu:hover .main-menu {
@@ -648,6 +654,7 @@ export default {
   border-radius: 5px;
   transition: 0.3s;
   font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .contact .contact-menu div i {
@@ -664,7 +671,8 @@ export default {
 
 .contact .contact-menu .ph-no {
   font-weight: bold;
-  font-size: 19px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
 .contact .contact-us {
@@ -678,6 +686,7 @@ export default {
 
 .contact .contact-us a {
   font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
 .contact .contact-us:hover {
@@ -1238,6 +1247,12 @@ export default {
   .products-info .products-vendor.rack img {
     margin-top: -40px;
     width: 140%;
+  }
+}
+
+@media (max-width: 1250px) {
+  .menu a {
+    font-size: 18px;
   }
 }
 
