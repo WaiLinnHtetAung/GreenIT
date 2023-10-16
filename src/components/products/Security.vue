@@ -1,22 +1,25 @@
 <template>
     <div class="products">
         <div class="product-left">
-            <div>Next-Generation Firewall</div>
-            <div>Virtual Next-Generation Firewall</div>
-            <div>Web Application Firewall</div>
-            <div>Ruggedized Network Firewalls</div>
+            <ul>
+                <li>Next-Generation Firewall</li>
+                <li>Virtual Next-Generation Firewall</li>
+                <li>Web Application Firewall</li>
+                <li>Ruggedized Network Firewalls</li>
+            </ul>
         </div>
         <div class="product-right">
+            <ul>
+                <li>Cloud-Native Firewall</li>
+                <li>Secure SD-Wan</li>
+                <li>DDOS Attack Protection</li>
+                <li>Mail Security Firewall</li>
+            </ul>
         </div>
     </div>
-    <div class="products-vendor">
+    <div class="products-vendor security">
         <div class="logo">
-            <img :src="require('@/assets/images/logo/cisco.png')" alt="">
-            <img :src="require('@/assets/images/logo/dell_emc.png')" alt="">
-        </div>
-        <div class="logo">
-            <img :src="require('@/assets/images/logo/fortinet.png')" alt="">
-            <img :src="require('@/assets/images/logo/hpe.png')" alt="">
+            <img :src="require('@/assets/images/products/Security.png')" alt="">
         </div>
     </div>
 </template>
@@ -29,4 +32,6 @@
 
 <style scoped>
 
+
+   
 </style>

@@ -4,7 +4,13 @@ import HomeView from '../views/HomeView.vue'
 const routes = [{
         path: '/',
         name: 'home',
-        component: HomeView
+        component: HomeView,
+        props: (route) => ({ slug: route.query.slug || null }),
+    },
+    {
+        path: '/home/:slug',
+        component: HomeView,
+        props: true,
     },
     {
         path: '/services-solutions',
@@ -26,10 +32,35 @@ const routes = [{
             import ('@/views/Promotion.vue')
     },
     {
-        path: '/about-us',
+        path: '/about-us/:slug',
         name: 'AboutUS',
         component: () =>
-            import ('@/views/AboutUs.vue')
+            import ('@/views/AboutUs.vue'),
+        props: true
+    },
+    {
+        path: '/career',
+        name: 'Career',
+        component: () =>
+            import ('@/views/Career.vue')
+    },
+    {
+        path: '/mobile-products/:slug',
+        name: 'Mobile Products',
+        component: () =>
+            import ('@/views/MobileProducts'),
+        props: true
+    },
+    {
+        path: '/case-studies',
+        name: 'Case Studies',
+        component: () =>
+            import ('@/views/CaseStudy.vue')
+    },
+    {
+        path: '/comming',
+        component: () =>
+            import ('@/views/Coming.vue')
     },
     {
         path: '/loading',

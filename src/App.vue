@@ -1,26 +1,36 @@
 <template>
   <v-app class="top-app">
     <!-- Navbar -->
-    <Navbar />
+    <Navbar @menuStatus="handleMenuStatus"/>
 
     <!-- Main content -->
-    <v-main>
+    <v-main :class="{blurPage: isBlur}">
       <router-view/>
     </v-main>
-    <!-- <AboutUs></AboutUs> -->
     <Footer />
+    <!-- <Chatbot></Chatbot> -->
   </v-app>
 </template>
 
 <script>
-import AboutUs from './components/AboutUs'
+import Chatbot from './components/Chatbot'
 import Navbar from "@/components/Navbar.vue";
 import Footer from '@/components/Footer.vue'
+import { ref } from 'vue';
 export default {
   components: {
-    AboutUs,
-    Navbar,Footer
-  },
+    Chatbot,Navbar,Footer},
+  setup() {
+    const isBlur = ref(null);
+
+    const handleMenuStatus = (data) => {
+      isBlur.value = data;
+    console.log(data)
+    }
+
+
+    return {handleMenuStatus, isBlur}
+  }
 };
 </script>
 
@@ -43,4 +53,8 @@ a {
   color: inherit;
 }
 
+.blurPage {
+  filter: blur(5px) brightness(.1);
+  background: rgb(128, 128, 128, .5);
+}
 </style>

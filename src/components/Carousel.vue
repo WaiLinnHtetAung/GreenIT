@@ -5,14 +5,12 @@
             delimiter-icon="mdi-square"
             color="white"
         >
-            <v-carousel-item v-for="(slide, i) in slider" :key="i"
-              :src="slide"
-              cover
+            <v-carousel-item v-for="(slide, i) in slider" 
+            :key="i"
+            :src="slide"
+            cover
+            eager
             >
-            <!-- <div class="caption">
-                <h2>GreenIT is a place for <br>all solutions</h2>
-                <router-link to="#">Contact Us</router-link>
-            </div> -->
             </v-carousel-item>
           </v-carousel>
     </div>
@@ -34,7 +32,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     .carousel {
         padding: 15px 15%;
     }

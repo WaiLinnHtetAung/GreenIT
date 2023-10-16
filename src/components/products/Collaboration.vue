@@ -1,28 +1,27 @@
 <template>
     <div class="products">
         <div class="product-left">
-            <div>Video Conferencing</div>
-            <div>Meeting Room Conferencing Camera</div>
-            <div>Interactive Display & Whiteboard</div>
-            <div>Camera & Speakerphone</div>
-            <div>Personal Solution & Webcams</div>
-            <div>Wireless Presentation System</div>
+            <ul>
+                <li>Video Conferencing</li>
+                <li>Meeting Room Conferencing Camera</li>
+                <li>Interactive Display & Whiteboard</li>
+                <li>Camera & Speakerphone</li>
+                <li>Personal Solution & Webcams</li>
+                <li>Wireless Presentation System</li>
+            </ul>
         </div>
         <div class="product-right">
-            <div>IP Conference Phone</div>
-            <div>USB/Bluetooth Speakerphone</div>
-            <div>Wireless Earbuds</div>
-            <div>Bluetooth Headsets</div>
+            <ul>
+                <li>IP Conference Phone</li>
+                <li>USB/Bluetooth Speakerphone</li>
+                <li>Wireless Earbuds</li>
+                <li>Bluetooth Headsets</li>
+            </ul>
         </div>
     </div>
     <div class="products-vendor">
         <div class="logo">
-            <img :src="require('@/assets/images/logo/cisco.png')" alt="">
-            <img :src="require('@/assets/images/logo/dell_emc.png')" alt="">
-        </div>
-        <div class="logo">
-            <img :src="require('@/assets/images/logo/fortinet.png')" alt="">
-            <img :src="require('@/assets/images/logo/hpe.png')" alt="">
+            <img :src="require('@/assets/images/products/Collaboration.png')" alt="">
         </div>
     </div>
 </template>

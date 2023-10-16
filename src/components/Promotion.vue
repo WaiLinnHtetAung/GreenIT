@@ -2,15 +2,15 @@
     <div>
         <div class="promotion swiper">
             <div class="swiper-wrapper">
-                <!-- <div class="swiper-slide" v-for="(promotion,i) in promotions" :key="i">
+                <div class="swiper-slide" v-for="(promotion,i) in promotions" :key="i">
                     <img :src="promotion.img_url" alt="">
-                </div> -->
-                <div class="swiper-slide" >
+                </div>
+                <!-- <div class="swiper-slide" >
                     <img :src="require('@/assets/images/promo_slider/1.jpg')" alt="">
                 </div>
                 <div class="swiper-slide" >
                     <img :src="require('@/assets/images/promo_slider/2.jpg')" alt="">
-                </div>
+                </div> -->
             </div>
         </div>
     </div>

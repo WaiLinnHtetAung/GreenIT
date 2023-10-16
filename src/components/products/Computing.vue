@@ -1,29 +1,26 @@
 <template>
     <div class="products">
         <div class="product-left">
-            <div>Rack Server</div>
-            <div>Tower Server</div>
-            <div>Modular Server</div>
-            <div>Rugged Server</div>
-            <div>Blade Server</div>
-            <div>High-performance SAN Storage Server</div>
+            <ul>
+                <li>Rack Server</li>
+                <li>Tower Server</li>
+                <li>Modular Server</li>
+                <li>Rugged Server</li>
+                <li>Blade Server</li>
+                <li>High-performance SAN Storage Server</li>
+            </ul>
         </div>
         <div class="product-right">
-            <div>Network Attached Storage Server</div>
-            <div>Direct Attached Storage Server</div>
-            <div>&nbsp; </div>
-            <div>Server Equipment and Accessories</div>
-            
+            <ul>
+                <li>Network Attached Storage Server</li>
+                <li>Direct Attached Storage Server</li>
+                <li>Server Equipment and Accessories</li>
+            </ul>           
         </div>
     </div>
     <div class="products-vendor">
         <div class="logo">
-            <img :src="require('@/assets/images/logo/cisco.png')" alt="">
-            <img :src="require('@/assets/images/logo/dell_emc.png')" alt="">
-        </div>
-        <div class="logo">
-            <img :src="require('@/assets/images/logo/fortinet.png')" alt="">
-            <img :src="require('@/assets/images/logo/hpe.png')" alt="">
+            <img :src="require('@/assets/images/products/Computing.png')" alt="">
         </div>
     </div>
 </template>

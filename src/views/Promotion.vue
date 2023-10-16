@@ -1,5 +1,5 @@
 <template>
-    <div class="promotion">
+    <div class="promotion" v-if="promotions.length > 0">
         <div class="content">
             <div class="img">
                 <div v-for="(promo, index) in promotions" :key="index">
@@ -13,12 +13,18 @@
             </div>
         </div>
     </div>
+
+    <div v-if="promotions.length < 1">
+        <PageLoading></PageLoading>
+      </div>
 </template>
 
 <script>
+import PageLoading from '../components/PageLoading'
 import getPromotions from '@/composables/getPromotions';
 import { onMounted, ref } from 'vue'
     export default {
+  components: { PageLoading },
         setup() {
             const {promotions, errors, load} = getPromotions();
             const logoNames = ref([]);
@@ -37,6 +43,7 @@ import { onMounted, ref } from 'vue'
                 }
             };
 
+
             onMounted(async() => {
                 await load();
 
@@ -44,8 +51,10 @@ import { onMounted, ref } from 'vue'
                     logoNames.value = promotions.value.map(pro => pro.title);
                     currentLogo.value = logoNames.value[0];
 
-                    setInterval(slider, 5000);
+                    setInterval(slider, 3000);
+
                 }
+
             });
 
             return {promotions, currentLogo}

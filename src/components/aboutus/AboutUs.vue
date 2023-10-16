@@ -59,9 +59,6 @@
         </p>
     </div>
 
-    <div class="about-us-contact-btn">
-        <router-link to="#">Get in touch</router-link>
-    </div>
 </template>
 
 <script>
@@ -155,11 +152,10 @@
     }
 
     .about-us .item p {
-        font-size: 11px;
+        font-size: 12px;
         text-align: center;
         height: 80px;
         word-spacing: -1px;
-        font-weight: bold;
     }
 
     .about-us-text {
@@ -179,19 +175,6 @@
         padding: 0 1%;
     }
     
-    .about-us-contact-btn {
-        display: flex;
-        justify-content: center;
-        margin: 60px auto;
-    }
-
-    .about-us-contact-btn a {
-        background: #287e3d;
-        color: #fff;
-        padding: 10px 30px;
-        border-radius: 7px;
-    }
-
     @media (max-width: 1650px) {
         .about-us .img p {
             bottom: 11%;
@@ -299,7 +282,6 @@
             font-size: 10px;
             height: 80px;
             word-spacing: 0px;
-            font-weight: normal;
         }
 
         .about-us-text {
@@ -312,9 +294,6 @@
 
         .about-us-text p {
             font-size: 14px;
-        }
-        .about-us-contact-btn a {
-            padding: 10px 30px;
         }
     }
 
@@ -454,10 +433,6 @@
         .about-us-text p {
             font-size: 12px;
         }
-        .about-us-contact-btn a {
-            padding: 8px 25px;
-            font-size: 13px;
-        }
 
     }
 
@@ -508,10 +483,6 @@
 
         .about-us-text p {
             font-size: 10px;
-        }
-        .about-us-contact-btn a {
-            padding: 8px 25px;
-            font-size: 13px;
         }
     }
 
