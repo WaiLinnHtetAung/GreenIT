@@ -190,7 +190,7 @@
           <router-link
             class="main-menu"
             :class="{ active: currentRoute.slice(0, 9) == '/products' }"
-            to="/#"
+            to="/productsPage"
             style="display: flex; gap: 7px; padding: 3.5px 10px"
             ><span>Products</span> <i class="fa-solid fa-sort-down"></i
           ></router-link>

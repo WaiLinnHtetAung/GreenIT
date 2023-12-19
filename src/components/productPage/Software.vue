@@ -49,6 +49,7 @@
 </template>
 
 <script>
+import { onMounted } from "vue";
 export default {
   setup() {
     const products = [
@@ -165,6 +166,10 @@ export default {
         ],
       },
     ];
+
+    onMounted(() => {
+      window.scrollTo(0, 0);
+    });
 
     return { products };
   },

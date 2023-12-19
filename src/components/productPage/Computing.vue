@@ -38,6 +38,7 @@
 </template>
 
 <script>
+import { onMounted } from "vue";
 export default {
   setup() {
     const products = [
@@ -69,6 +70,10 @@ export default {
         name: "Server Equipment and Accessories",
       },
     ];
+
+    onMounted(() => {
+      window.scrollTo(0, 0);
+    });
 
     return { products };
   },
