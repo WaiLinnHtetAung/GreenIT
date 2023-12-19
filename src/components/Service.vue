@@ -118,7 +118,7 @@
               Server Rental is sub-directory of Green IT Co.,Ltd. Our rental
               service offer Server, Storage, NAS, Router, Switch, Firewall,
               Wireless AP & Wireless Controller and so on.We are a preferred
-              rental partner and have over 6 years experience
+              rental partner and have over 6 years experiences.
             </p>
           </div>
           <hr />
@@ -132,7 +132,9 @@
     </v-row>
 
     <div class="view-all">
-      <router-link to="/services-solutions">View All Solutions</router-link>
+      <router-link to="/services-solutions" style="letter-spacing: 1px"
+        >View All Solutions</router-link
+      >
     </div>
   </div>
 </template>

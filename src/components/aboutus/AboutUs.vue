@@ -56,6 +56,16 @@
     </div>
   </div>
 
+  <div class="aboutus-video">
+    <iframe
+      src="https://www.youtube.com/embed/pygRoZSd80A?si=WMTHpGivb1Aq06dG"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
+
   <div class="about-us-text">
     <h2>A team built on experience</h2>
     <p>
@@ -164,6 +174,16 @@ export default {};
   word-spacing: -1px;
 }
 
+.aboutus-video {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.aboutus-video iframe {
+  width: 1000px;
+  height: 570px;
+}
+
 .about-us-text {
   background: #f7f6dc;
   padding: 50px 25%;
@@ -232,6 +252,11 @@ export default {};
 
   .about-us .item p {
     font-size: 15px;
+  }
+
+  .aboutus-video iframe {
+    width: 700px;
+    height: 400px;
   }
 }
 
@@ -322,6 +347,11 @@ export default {};
     font-size: 16px;
     line-height: 40px;
   }
+
+  .aboutus-video iframe {
+    width: 590px;
+    height: 330px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -399,6 +429,11 @@ export default {};
   .about-us .item p {
     font-size: 12px;
   }
+
+  .aboutus-video iframe {
+    width: 510px;
+    height: 300px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -449,6 +484,11 @@ export default {};
 
   .about-us-text p {
     font-size: 12px;
+  }
+
+  .aboutus-video iframe {
+    width: 400px;
+    height: 220px;
   }
 }
 
@@ -503,6 +543,13 @@ export default {};
 
   .about-us-text p {
     font-size: 13px;
+  }
+}
+
+@media (max-width: 430px) {
+  .aboutus-video iframe {
+    width: 360px;
+    height: 210px;
   }
 }
 

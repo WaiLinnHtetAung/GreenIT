@@ -7,7 +7,7 @@
     <div class="content">
       <div class="item pointer">
         <img :src="require('@/assets/images/solving_it/industry.jpg')" alt="" />
-        <h3>Industry & Manufracturing</h3>
+        <h3>Industry & Manufacturing</h3>
       </div>
       <div class="item pointer">
         <img

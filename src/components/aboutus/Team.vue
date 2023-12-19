@@ -3,7 +3,7 @@
     <div class="header">
       <h5>TEAM</h5>
       <h2>Get to know us better</h2>
-      <h6>
+      <h6 style="letter-spacing: 1px">
         Our staff has a variety of industry-recognized certifications and
         degrees
       </h6>
@@ -11,7 +11,7 @@
 
     <div class="img">
       <img :src="require('@/assets/images/team.jpg')" alt="" />
-      <p>
+      <p style="letter-spacing: 1px">
         One of many ways that we aim to keep providing customers with the best
         possible service is our continued investment in the education and growth
         of our people. We only hire the most highly-skilled professionals, and
@@ -28,6 +28,7 @@
           <ul>
             <li>Sales Engineer</li>
             <li>sales@greenitmm.com</li>
+            <li>+959 896 237 359</li>
             <li>+959 880 441 215</li>
           </ul>
         </div>
@@ -51,10 +52,10 @@
         </div>
 
         <div class="item" style="background: #287e3d">
-          <h3>Presales & Solution</h3>
+          <h3>Presales & Solutions</h3>
           <ul>
-            <li>Solution Team</li>
-            <li>solution@greenitmm.com</li>
+            <li>Presales Engineer Team</li>
+            <li>presales@greenitmm.com</li>
             <li>+959 880 441 215</li>
           </ul>
         </div>
@@ -81,10 +82,10 @@
   </div>
 
   <div class="team-footer">
-    <p>
+    <p style="letter-spacing: 1px">
       For general inquiry, you can reach us to our Customer Services Team at
     </p>
-    <span
+    <span style="letter-spacing: 1px"
       >Email: <b>info@greenitmm.com</b> / Hot Line:
       <b>+959 880 441 215</b></span
     >

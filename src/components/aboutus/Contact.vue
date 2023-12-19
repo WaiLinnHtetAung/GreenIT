@@ -3,26 +3,29 @@
     <div class="header">
       <h5>ABOUT</h5>
       <h2>Contact Us</h2>
-      <h6>Contact with our team for the more information</h6>
+      <h6 style="letter-spacing: 2px">
+        Contact with our team for the more information
+      </h6>
     </div>
 
     <div class="contact-info">
       <div class="team">
-        <h3>BUSINESS DEVELOPMENT TEAM</h3>
-        <h5>info@greenitmm.com</h5>
-        <span>+95 9 880 441 215</span>
+        <h3>INSIDE SALES TEAM</h3>
+        <h5>sales@greenitmm.com</h5>
+        <span>+959 896237358</span>
+        <span>+959 880441215</span>
       </div>
 
       <div class="team">
-        <h3>SOLUTION TEAM</h3>
+        <h3>SOLUTIONS TEAM</h3>
         <h5>solution@greenitmm.com</h5>
-        <span>+95 9 880 441 215</span>
+        <span>+959 880441215</span>
       </div>
 
       <div class="team">
-        <h3>FINANCE TEAM</h3>
-        <h5>finance@greenitmm.com</h5>
-        <span>+95 9 880 441 215</span>
+        <h3>BUSINESS DEVELOPMENT TEAM</h3>
+        <h5>bdteam@greenitmm.com</h5>
+        <span>+959 880441215</span>
       </div>
     </div>
   </div>

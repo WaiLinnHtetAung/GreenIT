@@ -189,7 +189,7 @@
         <div>
           <router-link
             class="main-menu"
-            :class="{ active: currentRoute == '/products' }"
+            :class="{ active: currentRoute.slice(0, 9) == '/products' }"
             to="/#"
             style="display: flex; gap: 7px; padding: 3.5px 10px"
             ><span>Products</span> <i class="fa-solid fa-sort-down"></i
@@ -197,25 +197,33 @@
         </div>
         <div class="mega-menu products-mega-menu">
           <div class="products-link">
-            <router-link to="#" @click="currentProduct = 'networking'"
+            <router-link
+              to="/products/networking"
+              @click="currentProduct = 'networking'"
               ><span
                 :class="{ 'active-product': currentProduct === 'networking' }"
                 >Networking</span
               ></router-link
             >
-            <router-link to="#" @click="currentProduct = 'computing'"
+            <router-link
+              to="/products/computing"
+              @click="currentProduct = 'computing'"
               ><span
                 :class="{ 'active-product': currentProduct === 'computing' }"
                 >Computing</span
               ></router-link
             >
-            <router-link to="#" @click="currentProduct = 'security'"
+            <router-link
+              to="/products/security"
+              @click="currentProduct = 'security'"
               ><span
                 :class="{ 'active-product': currentProduct === 'security' }"
                 >Security</span
               ></router-link
             >
-            <router-link to="#" @click="currentProduct = 'collaboration'"
+            <router-link
+              to="/products/collaboration"
+              @click="currentProduct = 'collaboration'"
               ><span
                 :class="{
                   'active-product': currentProduct === 'collaboration',
@@ -223,13 +231,15 @@
                 >Collaboration</span
               ></router-link
             >
-            <router-link to="#" @click="currentProduct = 'software'"
+            <router-link
+              to="/products/software"
+              @click="currentProduct = 'software'"
               ><span
                 :class="{ 'active-product': currentProduct === 'software' }"
                 >Software</span
               ></router-link
             >
-            <router-link to="#" @click="currentProduct = 'rack'"
+            <router-link to="/products/rack" @click="currentProduct = 'rack'"
               ><span :class="{ 'active-product': currentProduct === 'rack' }"
                 >Rack and Online UPS</span
               ></router-link
@@ -600,6 +610,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .menu {
@@ -615,9 +626,9 @@ export default {
 .menu a {
   padding: 8px 10px 8px;
   border-radius: 7px;
-  font-size: 20px;
+  font-size: 23px;
   font-weight: bold;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.6px;
 }
 
 .menu:hover .main-menu {
@@ -1052,6 +1063,13 @@ export default {
     height: 90px;
   }
 
+  .menu a {
+    padding: 8px 10px 8px;
+    border-radius: 7px;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
   /* -------- mega menu ------------*/
 
   .menu .mega-menu {
@@ -1251,8 +1269,11 @@ export default {
 }
 
 @media (max-width: 1250px) {
+  .menu-items {
+    gap: 3px;
+  }
   .menu a {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 
@@ -1650,6 +1671,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0px;
   }
 
   .menu {
@@ -1666,6 +1688,7 @@ export default {
     padding: 8px 5px 8px;
     border-radius: 7px;
     font-weight: bold;
+    font-size: 15px;
     letter-spacing: 1px;
   }
 

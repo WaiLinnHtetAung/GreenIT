@@ -3,7 +3,7 @@
     <div class="header">
       <h5>PARTNERS</h5>
       <h2>Drive business forward by partnering with us</h2>
-      <h6>
+      <h6 style="letter-spacing: 1px">
         We're so proud to our partners believe in us to deliver the best service
         and solutions.
       </h6>
@@ -34,7 +34,9 @@
   <div class="partner-footer">
     <h3>Ready to try Green IT?</h3>
     <h2>Start contacting with us for your goals and achievements.</h2>
-    <router-link to="/about-us/contact">CONTACT US</router-link>
+    <router-link to="/about-us/contact" style="letter-spacing: 2px"
+      >CONTACT US</router-link
+    >
   </div>
 </template>
 

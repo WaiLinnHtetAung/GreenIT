@@ -13,7 +13,7 @@
         “We put our people first.” It's something a lot of companies say, but
         not a lot of companies do. Here at Tecnologia, it's our most important
         core value. We believe when we place a high value on our team's
-        happiness, work/life balance, and professional development, ev- erybody
+        happiness, work/life balance, and professional development, everybody
         wins—clients included.
       </p>
     </div>

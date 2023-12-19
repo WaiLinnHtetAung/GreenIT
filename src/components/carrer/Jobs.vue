@@ -379,7 +379,8 @@ export default {
 }
 
 .positions .jd {
-  padding: 20px 20%;
+  margin: 0px 15%;
+  padding: 20px 5%;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -421,7 +422,8 @@ export default {
   }
 
   .positions .jd {
-    padding: 20px 15%;
+    margin: 0px 10%;
+    padding: 20px 5%;
     gap: 20px;
   }
 
@@ -449,7 +451,8 @@ export default {
   }
 
   .positions .jd {
-    padding: 20px 12%;
+    margin: 0px 7%;
+    padding: 20px 5%;
     gap: 20px;
   }
 
@@ -464,7 +467,8 @@ export default {
 
 @media (max-width: 790px) {
   .positions .jd {
-    padding: 20px 8%;
+    margin: 0px 3%;
+    padding: 20px 5%;
   }
 
   .positions .responsibility h3 {

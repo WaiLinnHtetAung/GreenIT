@@ -13,7 +13,7 @@
     <div class="service-content">
       Green IT is your trusted partner for IT management, data security, and
       cloud technology with one goal in mind: to transform the way your business
-      works in order to save you time and money.
+      works in order to save your time and money.
     </div>
 
     <div class="services-category">
@@ -31,7 +31,7 @@
             <div class="content">
               <img :src="service.img" alt="" />
               <h3>{{ service.title }}</h3>
-              <p>{{ service.p && service.p.slice(0, 140) + " ..." }}</p>
+              <p v-html="service.p && service.p.slice(0, 140) + '...'"></p>
             </div>
             <hr />
             <div class="view-more">
