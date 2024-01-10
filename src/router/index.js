@@ -52,12 +52,6 @@ const routes = [
     component: () => import("@/views/Career.vue"),
   },
   {
-    path: "/mobile-products/:slug",
-    name: "Mobile Products",
-    component: () => import("@/views/MobileProducts"),
-    props: true,
-  },
-  {
     path: "/case-studies",
     name: "Case Studies",
     component: () => import("@/views/CaseStudy.vue"),

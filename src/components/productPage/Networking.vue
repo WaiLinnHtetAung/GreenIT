@@ -6,6 +6,17 @@
       <h5>Products</h5>
       <h2>Networking</h2>
     </div>
+    <p class="head-text">
+      Networking is the practice of connecting computers and other devices
+      together to enable communication and data exchange between them.
+      Networking can be used for various purposes, such as sharing information,
+      resources, and services, accessing the internet, and collaborating with
+      others. Networking can also involve different types of networks, such as
+      local area networks (LANs), wide area networks (WANs), and cloud networks,
+      depending on the size, scope, and architecture of the network. Networking
+      also requires various protocols, standards, and devices that govern how
+      data is transmitted and received over the network.
+    </p>
     <img
       class="w-100 banner"
       :src="require('@/assets/images/products/networking/banner.jpg')"
@@ -13,7 +24,7 @@
     />
 
     <div class="row products-list">
-      <div class="col-12 col-md-7">
+      <div class="col-12 col-lg-7 mb-5">
         <div class="products-list m-5 m-sm-0">
           <div class="row">
             <div
@@ -30,14 +41,30 @@
           </div>
         </div>
       </div>
-      <div class="col-12 col-md-5 logo">
-        <img :src="require('@/assets/images/products/Networking.png')" alt="" />
+      <div class="col-12 col-lg-5">
+        <div class="row">
+          <div class="col-6 col-sm-3 col-lg-4" v-for="i in 20" :key="i">
+            <div
+              class="product-logo d-flex justify-content-center align-items-center shadow mb-5"
+              style="height: 100px"
+            >
+              <img
+                :src="
+                  require(`@/assets/images/products/networking/logo/${i}.png`)
+                "
+                alt=""
+                style="width: 80%"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import { onMounted } from "vue";
 export default {
   setup() {
     const products = [
@@ -88,6 +115,10 @@ export default {
       },
     ];
 
+    onMounted(() => {
+      window.scrollTo(0, 0);
+    });
+
     return { products };
   },
 };
@@ -104,6 +135,13 @@ export default {
   padding: 5px 15px;
   color: #fff;
   border-radius: 7px;
+}
+
+.products .head-text {
+  font-size: 20px;
+  padding: 10px 15px;
+  text-indent: 50px;
+  text-align: justify;
 }
 
 .products img {
@@ -129,11 +167,6 @@ export default {
   font-size: 20px;
 }
 
-.products-list .logo img {
-  width: 100%;
-  margin-top: 40px;
-}
-
 @media (max-width: 1630px) {
   .products {
     padding: 30px 9%;
@@ -143,6 +176,9 @@ export default {
 @media (max-width: 1200px) {
   .products {
     padding: 30px 3%;
+  }
+  .products .head-text {
+    font-size: 17px;
   }
 
   .products-list .product img {

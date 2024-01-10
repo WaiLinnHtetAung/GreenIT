@@ -1,34 +1,38 @@
 <template>
   <div class="service-detail">
-    <img class="banner" :src="service.banner_img" alt="" />
+    <div class="banner-img">
+      <img class="banner" :src="service.banner_img" alt="" />
+    </div>
 
     <div class="content">
       <div class="title">
         <img class="icon" :src="service.img" alt="" />
         <h2>{{ service.title }}</h2>
       </div>
-      <div class="body">
-        <img :src="service.preview_img" alt="" />
+      <div>
         <div class="content-section">
           <p v-html="service.p"></p>
 
           <div class="sub-title-container">
-            <div class="sub-title">
-              <h2>{{ service.sub_title_1 }}</h2>
-              <div class="list">
-                <div v-for="(item, i) in service.list_one" :key="i">
-                  <i class="fa-solid fa-check-double me-5"></i
-                  ><span>{{ item }}</span>
+            <img :src="service.preview_img" alt="" />
+            <div>
+              <div class="sub-title">
+                <h3>{{ service.sub_title_1 }}</h3>
+                <div class="list">
+                  <div v-for="(item, i) in service.list_one" :key="i">
+                    <i class="fa-solid fa-check-double me-5"></i
+                    ><span>{{ item }}</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="sub-title">
-              <h2>{{ service.sub_title_2 }}</h2>
-              <div class="list">
-                <div v-for="(item, i) in service.list_two" :key="i">
-                  <i class="fa-solid fa-check-double me-5"></i
-                  ><span>{{ item }}</span>
+              <div class="sub-title">
+                <h3>{{ service.sub_title_2 }}</h3>
+                <div class="list">
+                  <div v-for="(item, i) in service.list_two" :key="i">
+                    <i class="fa-solid fa-check-double me-5"></i
+                    ><span>{{ item }}</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -68,6 +72,10 @@ export default {
   margin-bottom: 30px;
 }
 
+.service-detail .banner-img {
+  padding: 10px 15%;
+}
+
 .service-detail .banner {
   filter: brightness(0.7);
 }
@@ -99,29 +107,34 @@ export default {
   object-fit: cover;
 }
 
-.content .body {
+.content .sub-title-container {
   display: flex;
   flex-direction: row-reverse;
   gap: 10px;
-  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
-.content .body img {
+.content .sub-title-container img {
   width: 40%;
   height: 300px;
   object-fit: cover;
+  display: inline-block;
+  margin-top: 50px;
 }
 
-.content .body .content-section p {
+.content .content-section p {
   margin-bottom: 30px;
   font-size: 21px;
+  text-align: justify;
+  margin-top: 50px;
 }
 
 .sub-title-container .sub-title {
   margin-bottom: 20px;
 }
 
-.sub-title h2 {
+.sub-title h3 {
   margin-bottom: 15px;
 }
 
@@ -140,6 +153,10 @@ export default {
 @media (max-width: 1630px) {
   .service-detail {
     margin-bottom: 30px;
+  }
+
+  .service-detail .banner-img {
+    padding: 10px 9%;
   }
   .service-detail img {
     height: 380px;
@@ -167,29 +184,29 @@ export default {
     height: 50px;
   }
 
-  .content .body {
+  .content .sub-title-container {
     display: flex;
     flex-direction: row-reverse;
     gap: 10px;
     align-items: center;
   }
 
-  .content .body img {
+  .content .sub-title-container img {
     width: 40%;
     height: 300px;
     object-fit: cover;
   }
 
-  .content .body .content-section p {
+  .content .content-section p {
     margin-bottom: 30px;
-    font-size: 15px;
+    font-size: 18px;
   }
 
   .sub-title-container .sub-title {
     margin-bottom: 20px;
   }
 
-  .sub-title h2 {
+  .sub-title h3 {
     margin-bottom: 15px;
     font-size: 22px;
   }
@@ -204,10 +221,16 @@ export default {
 }
 
 @media (max-width: 1320px) {
-  .content .body img {
+  .content .sub-title-container img {
     width: 50%;
     height: 300px;
     object-fit: cover;
+  }
+}
+
+@media (max-width: 1200px) {
+  .service-detail .banner-img {
+    padding: 10px 3%;
   }
 }
 
@@ -219,14 +242,14 @@ export default {
     filter: brightness(0.7);
   }
 
-  .content .body {
+  .content .sub-title-container {
     display: flex;
     flex-direction: column-reverse;
     gap: 10px;
-    align-items: center;
+    align-items: start;
   }
 
-  .content .body img {
+  .content .sub-title-container img {
     width: 80%;
     height: 300px;
     object-fit: cover;
@@ -251,7 +274,7 @@ export default {
 @media (max-width: 500px) {
   .service-detail .banner {
     width: 100%;
-    height: 150px;
+    height: 200px;
   }
   .content .title h2 {
     font-size: 24px;
@@ -264,7 +287,7 @@ export default {
     object-fit: cover;
   }
 
-  .sub-title h2 {
+  .sub-title h3 {
     margin-bottom: 15px;
     font-size: 20px;
   }
@@ -286,7 +309,7 @@ export default {
     object-fit: cover;
   }
 
-  .sub-title h2 {
+  .sub-title h3 {
     margin-bottom: 15px;
     font-size: 18px;
   }

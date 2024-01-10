@@ -321,32 +321,6 @@
         <template v-slot:activator="{ props }">
           <v-list-item v-bind="props" title="Services"></v-list-item>
         </template>
-
-        <!-- <v-list-group value="Supply">
-                    <template v-slot:activator="{ props }">
-                    <v-list-item
-                        v-bind="props"
-                        title="Supply"
-                    ></v-list-item>
-                    </template>
-        
-                    <v-list-item @click="navigate('/')">
-                        <v-list-item-title>Computing</v-list-item-title>
-                    </v-list-item>
-                    <v-list-item @click="navigate('/')">
-                        <v-list-item-title>Networking</v-list-item-title>
-                    </v-list-item>
-                    <v-list-item @click="navigate('/')">
-                        <v-list-item-title>Security</v-list-item-title>
-                    </v-list-item>
-                    <v-list-item @click="navigate('/')">
-                        <v-list-item-title>Collaboration</v-list-item-title>
-                    </v-list-item>
-                    <v-list-item @click="navigate('/')">
-                        <v-list-item-title>Software</v-list-item-title>
-                    </v-list-item>
-                </v-list-group> -->
-
         <v-list-group value="Service">
           <template v-slot:activator="{ props }">
             <v-list-item v-bind="props" title="Service"></v-list-item>
@@ -441,32 +415,32 @@
           <v-list-item v-bind="props" title="Products"></v-list-item>
         </template>
 
-        <v-list-item @click="navigate('/mobile-products/networking')">
+        <v-list-item @click="navigate('/products/networking')">
           <v-list-item-title>Networking</v-list-item-title>
         </v-list-item>
 
-        <v-list-item @click="navigate('/mobile-products/computing')">
+        <v-list-item @click="navigate('/products/computing')">
           <v-list-item-title>Computing</v-list-item-title>
         </v-list-item>
 
-        <v-list-item @click="navigate('/mobile-products/security')">
+        <v-list-item @click="navigate('/products/security')">
           <v-list-item-title>Security</v-list-item-title>
         </v-list-item>
 
-        <v-list-item @click="navigate('/mobile-products/collaboration')">
+        <v-list-item @click="navigate('/products/collaboration')">
           <v-list-item-title>Collaboration</v-list-item-title>
         </v-list-item>
 
-        <v-list-item @click="navigate('/mobile-products/software')">
+        <v-list-item @click="navigate('/products/software')">
           <v-list-item-title>Software</v-list-item-title>
         </v-list-item>
 
-        <v-list-item @click="navigate('/mobile-products/rack')">
+        <v-list-item @click="navigate('/products/rack')">
           <v-list-item-title>Rack & Online UPS</v-list-item-title>
         </v-list-item>
       </v-list-group>
 
-      <v-list-item @click="navigate('/comming')">
+      <v-list-item @click="navigate('/case-studies')">
         <v-list-item-title>Case Studies</v-list-item-title>
       </v-list-item>
 
@@ -474,7 +448,7 @@
         <v-list-item-title>Promotion</v-list-item-title>
       </v-list-item>
 
-      <v-list-item @click="navigate('/')">
+      <v-list-item @click="navigate('/about-us/contact')">
         <v-list-item-title>Contact Us</v-list-item-title>
       </v-list-item>
     </v-list>
